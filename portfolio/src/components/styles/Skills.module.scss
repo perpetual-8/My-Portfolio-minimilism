@@ -1,0 +1,68 @@
+@import "../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10rem;
+  background-color: $black-color;
+}
+
+.wrapper {
+  width: 75%;
+}
+
+.header1 {
+  font-family: $primary-font;
+  color: $white-color;
+  margin: 0;
+  font-size: xx-large;
+}
+
+
+.card_div{
+
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
+}
+
+
+.card{
+    text-align: center;
+    color:$white-color;
+    font-family: $secondary-font;
+    font-size: 1.25rem;
+    padding:0.2rem 0.9rem 0.2rem 0.9rem;
+    transition: transform 1s;
+}
+
+.card:hover{
+
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 7px 5px rgba(249, 246, 238,0.3);
+
+
+}
+
+.reactIcon{
+
+    animation: rotate 15s linear infinite;
+
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

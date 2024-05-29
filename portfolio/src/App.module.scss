@@ -1,0 +1,38 @@
+html { box-sizing: border-box;
+     
+     background-color: #28282B;
+
+}
+*, *:before, *:after { box-sizing: inherit; }
+ 
+* {
+     
+    box-sizing: border-box;
+  }
+
+
+
+.wrapper{
+     position: relative;
+     height: 100vh;
+     overflow-y: auto;
+     overflow-x: hidden;
+     perspective: 10px;
+     z-index: 1;
+}
+
+.parrallex{
+     
+     position: relative;
+     transform-style: preserve-3d;
+     z-index: -1;
+     transform: translateZ(-10px) scale(2.1);
+}
+
+.artparrallex{
+    
+     position: relative;
+     transform-style: preserve-3d;
+     z-index: -1;
+     transform: translateZ(-10px) scale(2.1);
+}
