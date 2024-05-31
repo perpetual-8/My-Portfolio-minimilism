@@ -108,3 +108,70 @@
   font-size:1.25rem;
   padding-right:1rem;
 }
+
+
+@media (max-width:768px)
+{
+  .header1{
+    font-size:large;
+
+  }
+
+  .Pname{
+    font-size:small;
+  }
+
+  .pImg{
+    width: 30vw;
+    aspect-ratio: 2/1;
+  }
+  .cardList{
+    padding: 0.5rem;
+  }
+
+  .icon{
+    font-size: 1rem;
+  }
+  .card{
+    font-size: smaller;
+    height: 27rem;
+  }
+  .card:hover{
+    transform: scale(0.95);
+  }
+}
+
+
+@media (max-width:450px)
+{
+  .header1{
+    font-size:medium;
+
+  }
+
+  .Pname{
+    font-size:small;
+  }
+
+  .pImg{
+    width: 65vw;
+    aspect-ratio: 2/1;
+  }
+  .cardList{
+    padding: 0.5rem;
+  }
+
+  .icon{
+    font-size: 1rem;
+  }
+  .card{
+    font-size: xx-small;
+    height: 22rem;
+  }
+
+  .card:hover{
+    transform: scale(0.8);
+  }
+
+}
+

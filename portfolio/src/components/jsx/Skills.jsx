@@ -21,54 +21,54 @@ const Skills = () => {
      <div className={css.card_div}>
      
         <div className={css.card}>
-            <FaReact color="#F9F6EE" size="6rem" className={css.reactIcon}/>
+            <FaReact   className={`${css.reactIcon} ${css.Icon}`}/>
             <p className={css.cardline}>React</p>
         </div>
 
         
 
         <div className={css.card}>
-            <FaNode color="#F9F6EE" size="6rem"/>
+            <FaNode  className={css.Icon}/>
             <p  className={css.cardline}>Node</p>
         </div>
 
         <div className={css.card}>
-            <PiFileHtmlLight color="#F9F6EE" size="6rem"/>
+            <PiFileHtmlLight className={css.Icon}/>
             <p  className={css.cardline}>HTML</p>
         </div>
 
         <div className={css.card}>
-            <PiFileCss color="#F9F6EE" size="6rem"/>
+            <PiFileCss className={css.Icon}/>
             <p  className={css.cardline}>CSS</p>
         </div>
 
 
         <div className={css.card}>
-            <FaGitAlt color="#F9F6EE" size="6rem"/>
+            <FaGitAlt className={css.Icon}/>
             <p  className={css.cardline}>Git</p>
         </div>
         <div className={css.card}>
-            <SiMongodb color="#F9F6EE" size="6rem"/>
+            <SiMongodb className={css.Icon}/>
             <p  className={css.cardline}>MongoDB</p>
         </div>
 
         <div className={css.card}>
-            <SiMysql color="#F9F6EE" size="6rem"/>
+            <SiMysql className={css.Icon}/>
             <p  className={css.cardline}>MySQL</p>
         </div>
 
         <div className={css.card}>
-            <SiJavascript color="#F9F6EE" size="6rem"/>
+            <SiJavascript className={css.Icon}/>
             <p  className={css.cardline}>Javascript</p>
         </div>
 
         <div className={css.card}>
-            <FaPython color="#F9F6EE" size="6rem"/>
+            <FaPython className={css.Icon}/>
             <p  className={css.cardline}>Python</p>
         </div>
 
         <div className={css.card}>
-            <SiCplusplus color="#F9F6EE" size="6rem"/>
+            <SiCplusplus className={css.Icon}/>
             <p  className={css.cardline}>C++</p>
         </div>
 

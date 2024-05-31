@@ -4,3 +4,27 @@
   transform: scale(1.1);
 
 }
+
+
+@media (max-width:768px) {
+
+  .over{
+
+    width: 20px;
+    aspect-ratio: 1/1;
+  }
+
+
+  
+}
+@media (max-width:450px) {
+
+  .over{
+
+    width: 12px;
+    aspect-ratio: 1/1;
+  }
+
+
+  
+}

@@ -16,3 +16,32 @@
     
    mix-blend-mode: auto;
 }
+
+@media (max-width:768px) {
+   .wrapper {
+        
+        margin-left: 5rem;
+      
+        
+   
+   }
+   .link{
+      font-size:1rem;
+   }
+
+}
+
+
+@media (max-width:450px) {
+   .wrapper {
+        
+        margin-left: 3rem;
+      
+        
+   
+   }
+   .link{
+      font-size:1rem;
+   }
+
+}

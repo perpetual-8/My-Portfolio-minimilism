@@ -30,3 +30,33 @@
     font-size:clamp(0.8rem, 1.5vw + 1rem, 4rem);
     color:$green-color;
 }
+
+
+
+@media (max-width:768px) {
+    
+    .name{
+        // margin-top: 12rem;
+         margin-left: 5rem;
+        font-size: 1.5rem;
+    
+    }.role{
+        // margin-top: 12rem;
+         margin-left: 5rem;
+        font-size: 0.8rem;
+    
+    }
+    
+
+}
+
+
+@media (max-width:450px) {
+    .name,.role{
+        // margin-top: 12rem;
+         margin-left: 3rem;
+        
+    
+    }
+
+}

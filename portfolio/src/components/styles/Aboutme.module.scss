@@ -62,3 +62,58 @@
 .line3{
     color:$darker-green-color;
 }
+
+
+
+
+
+@media (max-width:768px) {
+    
+   .container{
+    display: block;
+    padding-inline:3rem;
+   }
+   
+   .wrapper{
+    width:100%;
+   }
+   .header1{
+    font-size:large;
+   }
+
+   .name{
+    font-size: small;
+   }
+
+   .intro{
+    font-size:small;
+   }
+
+   .footer{
+    margin-top:2rem;
+    display: block;
+   }
+   .header2{
+    margin-top: 2rem;
+    font-size:small;
+   }
+   .line,.line2,.line3{
+    font-size:small;
+   }
+
+}
+
+
+@media (max-width:450px) {
+  .container{
+    display: block;
+    padding-inline:1.5rem;
+   }
+
+   .line,.line2,.line3{
+    font-size:x-small;
+   }
+   .intro{
+    font-size: x-small;
+   }
+}

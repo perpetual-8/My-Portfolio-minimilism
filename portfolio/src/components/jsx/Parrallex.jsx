@@ -6,7 +6,7 @@ const Parrallex = () => {
     
     <div>
     
-     <img src={img} alt="creation of adam"  width="100%" />
+     <img src={img} alt="creation of adam"  width="100%" className={css.img} />
     
     </div>
 

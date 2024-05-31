@@ -49,10 +49,14 @@
 
 
 }
-
 .reactIcon{
+  animation: rotate 15s linear infinite;
 
-    animation: rotate 15s linear infinite;
+}
+.Icon{
+
+  font-size: 6rem;
+  color:#F9F6EE;
 
 }
 
@@ -66,3 +70,52 @@
   }
   
   
+
+  @media (max-width:768px)
+  {
+.header1{
+  font-size: large;
+}
+
+.Icon{
+  font-size:3rem;
+}
+
+.cardline{
+  font-size: small;
+}
+ .card_div{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:1rem;
+ }
+
+  }
+
+  
+  @media (max-width:460px)
+  {
+.header1{
+  font-size: medium;
+}
+
+.Icon{
+  font-size:1.5rem;
+}
+
+.cardline{
+  font-size: xx-small;
+}
+ .card{
+  padding:1rem;
+ }
+ .card_div{
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:0;
+  
+ }
+
+  }
