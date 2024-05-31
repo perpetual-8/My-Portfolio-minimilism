@@ -23,11 +23,12 @@
 }
 
 .cardList {
+  margin-top:2rem;
   padding: 2rem;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
-  gap: 4rem;
+  gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
   color: $white-color;
@@ -39,9 +40,17 @@
   height: auto;
 }
 .card {
-  scroll-snap-align: start;
-  height: 38rem;
- 
+   
+  scroll-snap-align:center;
+  height: 30rem;
+  padding: 1rem;
+  box-shadow: 0 0 3px $white-color;
+  transition: transform 300ms;
+}
+.card:hover {
+  
+  box-shadow: 0 0 6px 6px $white-color;
+  transform: scale(1.05);
 }
 .Pname {
   font-family: $primary-font;
@@ -61,12 +70,13 @@
   cursor: pointer;
 }
 
+ 
 .pImg {
   
 
-  width: 19vw;
-  aspect-ratio: 1/1;
-  object-fit:contain;
+  width: 20vw;
+  aspect-ratio: 2/1;
+  object-fit:fill;
 }
 
 .link{
@@ -84,4 +94,17 @@
 
   // max-height: 4rem; 
   
+}
+
+
+.iconlist{
+ display: flex;
+  
+   
+}
+
+.icon{
+  color:$white-color;
+  font-size:1.25rem;
+  padding-right:1rem;
 }

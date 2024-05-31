@@ -6,8 +6,19 @@ import RightArrow from "./RightArrow.svg";
 import p2img from "../../assets/budget app.png";
 import p1img from "../../assets/weekaway.png";
 import p3img from "../../assets/techbazaar.jpg";
+import p4img from "../../assets/amazon.png";
+////////////////////
+///////////////////////
 
-const Aboutme = () => {
+import { FaReact } from "react-icons/fa";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { MdCss } from "react-icons/md";
+import { TbBrandVite } from "react-icons/tb";
+import { FaBootstrap } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { BiLogoMongodb } from "react-icons/bi";
+
+const Project = () => {
   const cardListRef = useRef(null);
 
   const scrollRight = () => {
@@ -39,8 +50,15 @@ const Aboutme = () => {
               className={css.link}
             >
               <p className={css.Pname}> WEEKAWAY </p>
-              <img src={p1img} alt="" className={css.pImg} />
-              <p>icon of technology</p>
+              <img src={p1img} alt="weekaway" className={css.pImg} />
+              <span className={css.iconlist}>
+                <p className={css.icon}>
+                  <FaReact />{" "}
+                </p>
+                <p className={css.icon}>
+                  <BiLogoTailwindCss />
+                </p>
+              </span>
               <p>
                 {" "}
                 Sleek static website built with React.js and Tailwind CSS,
@@ -58,7 +76,14 @@ const Aboutme = () => {
             >
               <p className={css.Pname}> Budget Calculator </p>
               <img src={p2img} alt="project 2" className={css.pImg} />
-              <p>icon of technology</p>{" "}
+              <span className={css.iconlist}>
+                <p className={css.icon}>
+                  <FaReact />{" "}
+                </p>
+                <p className={css.icon}>
+                  <MdCss />
+                </p>
+              </span>
               <p className={css.desc}>
                 {" "}
                 Kharchaa is a user-friendly home budget calculator designed to
@@ -71,8 +96,25 @@ const Aboutme = () => {
 
           <div className={css.card}>
             <p className={css.Pname}> TechBazaar </p>
-            <img src={p3img} alt="" className={css.pImg} />
-            <p>icon of technology</p>
+            <img src={p3img} alt="Techbazaar" className={css.pImg} />
+            <span className={css.iconlist}>
+              <p className={css.icon}>
+                <FaReact />{" "}
+              </p>
+              <p className={css.icon}>
+                <MdCss />
+              </p>
+              <p className={css.icon}>
+                <FaBootstrap />
+              </p>
+              <p className={css.icon}>
+                <FaNodeJs />
+              </p>
+              <p className={css.icon}>
+                <BiLogoMongodb />
+              </p>
+              
+            </span>
             <p>
               {" "}
               Implemented user authentication, personalized shopping experience,
@@ -82,58 +124,32 @@ const Aboutme = () => {
           </div>
 
           <div className={css.card}>
-            <p className={css.Pname}> Name </p>
-            <img
-              src="https://via.placeholder.com/300
-"
-              alt=""
-            />
-            <p> 2 line description</p>
-            <p>icon of technology</p>
-          </div>
-
-          <div className={css.card}>
-            <p className={css.Pname}> Name </p>
-            <img
-              src="https://via.placeholder.com/300
-"
-              alt=""
-            />
-            <p> 2 line description</p>
-            <p>icon of technology</p>
-          </div>
-
-          <div className={css.card}>
-            <p className={css.Pname}> Name </p>
-            <img
-              src="https://via.placeholder.com/300
-"
-              alt=""
-            />
-            <p> 2 line description</p>
-            <p>icon of technology</p>
-          </div>
-
-          <div className={css.card}>
-            <p className={css.Pname}> Name </p>
-            <img
-              src="https://via.placeholder.com/300
-"
-              alt=""
-            />
-            <p> 2 line description</p>
-            <p>icon of technology</p>
-          </div>
-
-          <div className={css.card}>
-            <p className={css.Pname}> Name </p>
-            <img
-              src="https://via.placeholder.com/300
-"
-              alt=""
-            />
-            <p> 2 line description</p>
-            <p>icon of technology</p>
+            <a
+              href="https://amazonclientside.netlify.app/"
+              target="_blank"
+              className={css.link}
+            >
+              <p className={css.Pname}> AmazonClient </p>
+              <img src={p4img} alt="Amazon" className={css.pImg} />
+              <span className={css.iconlist}>
+                <p className={css.icon}>
+                  <FaReact />{" "}
+                </p>
+                <p className={css.icon}>
+                  <TbBrandVite />
+                </p>
+                <p className={css.icon}>
+                <MdCss />
+              </p>
+              </span>
+              <p className={css.desc}>
+                {" "}
+                Developed a two-page Amazon client featuring a home page and a
+                product page, with functionality to add items to the cart,
+                demonstrating modern e-commerce interface design and user
+                interaction.
+              </p>
+            </a>
           </div>
         </div>
 
@@ -143,12 +159,12 @@ const Aboutme = () => {
             scrollRight();
           }}
         >
-          {" "}
-          <RightArrow />{" "}
+          
+          <RightArrow /> 
         </span>
       </div>
     </div>
   );
 };
 
-export default Aboutme;
+export default Project;
