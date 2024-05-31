@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+.link {
+  color: $white-color; /* Keeps the link the same color as surrounding text */
+  text-decoration: none; /* Removes underline from the link */
+  font-size: 2rem;
+   margin-top:1rem;
+   margin-right:1rem;
+}
+
+.wrapper{
+   margin-left: 14rem;
+   display: flex;
+    
+   
+    
+   mix-blend-mode: auto;
+}
