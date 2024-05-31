@@ -40,6 +40,8 @@
 }
 .card {
   scroll-snap-align: start;
+  height: 38rem;
+ 
 }
 .Pname {
   font-family: $primary-font;
@@ -70,4 +72,16 @@
 .link{
   color: $white-color; /* Keeps the link the same color as surrounding text */
   text-decoration: none; /* Removes underline from the link */
+}
+
+.desc{
+   
+  // display: -webkit-box;
+  // -webkit-line-clamp: 2;
+  // -webkit-box-orient: vertical;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+
+  // max-height: 4rem; 
+  
 }
