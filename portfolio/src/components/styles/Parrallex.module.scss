@@ -1,5 +1,13 @@
 @media (max-width: 768px) {
   .img {
-    height: 60vw;
+    
+    height: 70vw;
+    transform: scale(1.01);
+  }
+}
+@media (max-width:350px) {
+  .img {
+    height: 70vw;
+    transform: scale(1.01);
   }
 }
