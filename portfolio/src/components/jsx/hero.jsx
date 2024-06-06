@@ -36,9 +36,9 @@ const Hero = () => {
       <p className={css.name} ref={textRef}>Hamza Ahmad Bhutta </p>
       <p className={css.role}>Software Engineer </p>
       <ProfileBar />
-      <button onClick={handleDownload} className={css.button}>
+      {/* <button onClick={handleDownload} className={css.button}>
         Download CV
-      </button>
+      </button> */}
     </div>
   );
 };
