@@ -15,9 +15,9 @@ function App() {
         <Aboutme />
         <Skills />
 
-        <div className={css.artparrallex}>
+        {/* <div className={css.artparrallex}>
           <Parrallex />
-        </div>
+        </div> */}
 
         <Project />
       </div>
