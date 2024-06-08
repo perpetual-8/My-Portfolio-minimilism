@@ -13,11 +13,11 @@ function App() {
           <Hero />
         </div>
         <Aboutme />
-        <Skills />
+      
 
-        {/* <div className={css.artparrallex}>
-          <Parrallex />
-        </div> */}
+        <div className={css.artparrallex}>
+           <Skills />
+        </div>  
 
         <Project />
       </div>
