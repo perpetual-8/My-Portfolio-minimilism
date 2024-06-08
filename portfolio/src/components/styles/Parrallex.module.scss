@@ -1,8 +1,14 @@
+.img {
+    
+  height: 30vw;
+    transform: scale(1.01);
+}
+
 @media (max-width: 768px) {
   .img {
     
-    height: 70vw;
-    transform: scale(1.01);
+    height: 50vw;
+    transform: scale(1.0);
   }
 }
 @media (max-width:350px) {

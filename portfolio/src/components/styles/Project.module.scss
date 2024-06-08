@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   padding-block: 10rem;
-  background-color: $black-color;
+  background-color: $white-color;
   position: relative;
 }
 
@@ -17,7 +17,7 @@
 
 .header1 {
   font-family: $primary-font;
-  color: $white-color;
+  color: $black-color;
   margin: 0;
   font-size: xx-large;
 }
@@ -31,7 +31,7 @@
   gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
-  color: $white-color;
+  color: $black-color;
   font-family: $secondary-font;
 
   scroll-snap-type: x mandatory;
@@ -44,12 +44,12 @@
   scroll-snap-align:center;
   height: 30rem;
   padding: 1rem;
-  box-shadow: 0 0 3px $white-color;
+  box-shadow: 0 0 3px $black-color;
   transition: transform 300ms;
 }
 .card:hover {
   
-  box-shadow: 0 0 3px 3px $white-color;
+  box-shadow: 0 0 3px 3px $black-color;
   transform: scale(1.05);
 }
 .Pname {
@@ -80,7 +80,7 @@
 }
 
 .link{
-  color: $white-color; /* Keeps the link the same color as surrounding text */
+  color: $black-color; /* Keeps the link the same color as surrounding text */
   text-decoration: none; /* Removes underline from the link */
 }
 
@@ -104,7 +104,7 @@
 }
 
 .icon{
-  color:$white-color;
+  color:$black-color;
   font-size:1.25rem;
   padding-right:1rem;
 }
