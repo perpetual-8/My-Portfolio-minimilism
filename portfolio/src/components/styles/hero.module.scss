@@ -14,9 +14,15 @@
 
 }
 
-.name,.role{
+.textwrapper{
+    margin-left: 14rem;
+    margin-block: 1rem;
+
+}
+
+.name{
     // margin-top: 12rem;
-     margin-left: 14rem;
+    margin-left: 14rem;
     margin-bottom: 0;
     font-family: $primary-font;
     font-size:clamp(2rem, 3vw + 1rem, 6rem);
@@ -25,7 +31,8 @@
 }
 
 .role{
-    margin-top: 0;
+    line-height: 0;
+    margin:0;
     font-family: $secondary-font;
     font-size:clamp(0.8rem, 1.5vw + 1rem, 4rem);
     color:$green-color;

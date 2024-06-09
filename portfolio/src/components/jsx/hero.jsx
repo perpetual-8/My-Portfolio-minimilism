@@ -2,39 +2,46 @@ import { useEffect, useRef } from "react";
 import css from "../styles/hero.module.scss";
 import ProfileBar from "./ProfileBar";
 import { gsap } from "gsap";
- 
+import SplitTextJS from "split-text-js";
+import { useGSAP } from "@gsap/react";
+
 const Hero = () => {
-   
-  const textRef = useRef(null);
+  gsap.registerPlugin(useGSAP);
 
-  useEffect(() => {
-    const text = textRef.current;
-    const chars = text.innerText.split('');
+  const role = useRef([]);
 
-    text.innerHTML = chars.map(char => `<span>${char}</span>`).join('');
+  useGSAP(() => {
+    const tl = gsap.timeline({ repeat: -1 });
 
-    gsap.timeline()
-      .fromTo(
-        text.children,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', stagger: 0.05 }
-      );
-  }, []);
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Hamza Bhutta FD cv.pdf"; // Updated path to your CV file
-    link.download = "Hamza Bhutta FD cv.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-  
+    role.current.forEach((roleElement, index) => {
+      const splitText = new SplitTextJS(roleElement, { type: "chars" });
+
+      tl.from(splitText.chars, {
+        opacity: 0, 
+        y: 10, 
+        rotateX: -90, 
+        stagger: 0.2,
+        duration: 0.1
+        
+      }, index === 0 ? ">" : ">1") // Start the next animation after the previous one
+      .to(splitText.chars, {
+        opacity: 1, 
+        y: -10, 
+        rotateX: 90, 
+        stagger: 0.2,
+        duration: 0.1
+      });
+    });
+  });
 
   return (
     <div className={css.container}>
-      
-      <p className={css.name} ref={textRef}>Hamza Ahmad Bhutta </p>
-      <p className={css.role}>Software Engineer </p>
+      <p className={css.name}>Hamza Ahmad Bhutta</p>
+      <div className={css.textwrapper}>
+        <p className={css.role} ref={(el) => (role.current[0] = el)}>Software Engineer</p>
+        <p className={css.role} ref={(el) => (role.current[1] = el)}>Frontend Developer</p>
+        <p className={css.role} ref={(el) => (role.current[2] = el)}>Web App Developer</p>
+      </div>
       <ProfileBar />
       {/* <button onClick={handleDownload} className={css.button}>
         Download CV
