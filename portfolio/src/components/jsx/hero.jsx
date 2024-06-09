@@ -11,7 +11,7 @@ const Hero = () => {
   const role = useRef([]);
 
   useGSAP(() => {
-    const tl = gsap.timeline({ repeat: -1 });
+    const tl = gsap.timeline({ repeat: -1,ease: "bounce" });
 
     role.current.forEach((roleElement, index) => {
       const splitText = new SplitTextJS(roleElement, { type: "chars" });
@@ -20,16 +20,17 @@ const Hero = () => {
         opacity: 0, 
         y: 10, 
         rotateX: -90, 
-        stagger: 0.2,
-        duration: 0.1
-        
-      }, index === 0 ? ">" : ">1") // Start the next animation after the previous one
+        stagger: {amount:0.3},
+        duration: 0.3
+
+      },  ">") // Start the next animation after the previous one
       .to(splitText.chars, {
+        delay:2,
         opacity: 1, 
         y: -10, 
         rotateX: 90, 
-        stagger: 0.2,
-        duration: 0.1
+        stagger: {amount:0.3},
+        duration: 0.3
       });
     });
   });
