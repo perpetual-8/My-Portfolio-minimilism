@@ -7,11 +7,12 @@ import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
   gsap.registerPlugin(useGSAP);
-
+ 
   const role = useRef([]);
 
   useGSAP(() => {
-    const tl = gsap.timeline({ repeat: -1,ease: "bounce" });
+    
+    const tl = gsap.timeline({ repeat: -1,ease: "bounce"});
 
     role.current.forEach((roleElement, index) => {
       const splitText = new SplitTextJS(roleElement, { type: "chars" });
@@ -32,7 +33,11 @@ const Hero = () => {
         stagger: {amount:0.3},
         duration: 0.3
       });
+   
     });
+
+
+
   });
 
   return (
