@@ -70,10 +70,16 @@
     
     }.role{
         // margin-top: 12rem;
-         margin-left: 5rem;
+ 
         font-size: 0.8rem;
     
     }
+    .textwrapper{
+        margin-left: 5rem;
+        margin-block: 0.8rem;
+    
+    }
+    
     
 .button{
     
@@ -90,13 +96,18 @@ font-size: 0.3rem;
 
 
 @media (max-width:450px) {
-    .name,.role{
+    .name{
         // margin-top: 12rem;
          margin-left: 3rem;
         
     
     }
-
+    .textwrapper{
+        margin-left: 3rem;
+        margin-block: 0.5rem;
+    
+    }
+    
     .name{
         font-size: 1rem;
     }
@@ -117,12 +128,18 @@ font-size: 0.3rem;
   
 }  
 @media (max-width:350px) {
-    .name,.role{
+    .name{
         // margin-top: 12rem;
          margin-left: 1.5rem;
         
     
     }
+    .textwrapper{
+        margin-left: 1.5rem;
+        margin-block: 0.3rem;
+    
+    }
+    
     .button{
     
         padding: 0.1rem 0.4rem;
