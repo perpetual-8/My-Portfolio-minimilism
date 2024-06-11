@@ -45,7 +45,7 @@
 .card:hover{
 
     transform: scale(1.1);
-    box-shadow: inset 0px 0px 7px 5px rgba(249, 246, 238,0.3);
+    filter: drop-shadow(0 0 0.3rem $green-color);
 
 
 }
